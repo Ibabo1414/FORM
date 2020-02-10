@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Créer un formulaire uniquement avec du html</title>
+	</head>
+	<body>
+		<main>
+		<form>
+			<fieldset><br>
+			<fieldset>
+				<legend>Civilités</legend>
+				<p>
+		        <label for="name">Nom(s) et prénom(s) :</label>
+		        <input type="text" id="name" name="user_name" tabindex="1"><br><br>
+		        <label for="mail">Adresse e-mail :</label>
+		        <input type="email" id="mail" name="user_mail" tabindex="2"><br><br>
+		        </p>
+		        <legend><b>Sexe</b></legend>
+			    <p>
+			    <input type="radio" name="sexe" id="homme">
+				<label for="male">homme</label>
+				<input type="radio" name="sexe" id="femme">
+				<label for="female">femme</label>
+				</p>
+			</fieldset><br>
+			<fieldset>
+				<legend>Centres d'intérêt</legend>
+					<input type="radio" name="intérêt1" id="musique">
+					<label for="musique">Musique</label>
+					<input type="radio" name="intérêt2" id="InfosWeb">
+					<label for="InfosWeb">Infos Web</label>
+					<input type="radio" name="intérêt3" id="lecture">
+					<label for="Lecture">Lecture</label>
+					</fieldset><br>
+			<fieldset>
+				<legend>Dernier diplôme</legend>
+				<select name="diplômes" id="diplôme-select">
+			    <option value="">-Choisissez votre diplôme !-</option>
+			    <option value="Aucun">Aucun</option>
+			    <option value="Bac">Bac</option>
+			    <option value="DUT">DUT</option>
+			    <option value="Licence">Licence</option>
+			    <option value="Master">Master</option>
+			    <label for="story">Tell us your story:</label>
+			    </select>	
+			</fieldset >
+				<p>Commentaires (500 mots)</p>
+					<textarea id="commentaire" name="commentaire" rows="8" cols="37" placeholder="Écrivez votre message ici..."></textarea>
+	            <p>
+	                <input type="checkbox" name="condition" id="condition" required>
+	                <label for="condition">J'accepte <a href="#">les conditions d'utilisation</a>.</label>
+	            </p>
+	            <p><input type="submit" name="envoyer" required></p>
+	       	</fieldset>
+	    </form>
+	    </main>
+	</body>
+</html>
